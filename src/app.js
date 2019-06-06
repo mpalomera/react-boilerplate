@@ -1,13 +1,13 @@
 import React from 'react';
-import {hot} from 'react-hot-loader';
+import { hot } from 'react-hot-loader';
 
 const Warning = React.lazy(() => import('./warning'));
 class App extends React.Component {
   state = {
-    count: 0,
+    count: 0
   };
   render() {
-    const {count} = this.state;
+    const { count } = this.state;
     return (
       <div>
         <h1> Hello World</h1>
@@ -20,13 +20,13 @@ class App extends React.Component {
           ) : null}
         </h2>
         <button
-          onClick={() => this.setState((state) => ({count: state.count + 1}))}
+          onClick={() => this.setState(state => ({ count: state.count + 1 }))}
         >
           {' '}
           +{' '}
         </button>
         <button
-          onClick={() => this.setState((state) => ({count: state.count - 1}))}
+          onClick={() => this.setState(state => ({ count: state.count - 1 }))}
         >
           {' '}
           -{' '}
