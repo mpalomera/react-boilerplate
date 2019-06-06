@@ -8,7 +8,12 @@
     "jest": true
   },
   "settings": { "react": { "version": "detect" } },
-  "extends": ["google", "plugin:react/recommended", "prettier"],
+  "extends": [
+    "google",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
